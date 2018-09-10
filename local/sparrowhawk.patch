@@ -1,0 +1,11 @@
+--- sparrowhawk/src/lib/normalizer.cc	2018-08-01 12:23:06.281982561 -0400
++++ spwk_1/src/lib/normalizer.cc	2018-07-20 14:15:00.758580288 -0400
+@@ -155,7 +155,7 @@
+           (utt->linguistic().words_size() == 0 ||
+            utt->linguistic().words(
+                utt->linguistic().words_size() - 1).id() != "sil")) {
+-        AddWord(utt, token, "sil");
++//        AddWord(utt, token, "sil");
+       }
+     } else if (token->type() == Token::SEMIOTIC_CLASS) {
+       if (!token->skip()) {
