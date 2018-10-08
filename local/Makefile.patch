@@ -1,11 +1,7 @@
---- Makefile	2018-08-01 13:47:38.357670505 -0400
-+++ Makefile_mod	2018-08-01 13:48:29.558256037 -0400
-@@ -7,10 +7,10 @@
- 
- # Note: OpenFst requires a relatively recent C++ compiler with C++11 support,
- # e.g. g++ >= 4.7, Apple clang >= 5.0 or LLVM clang >= 3.3.
--OPENFST_VERSION ?= 1.6.7
-+OPENFST_VERSION ?= 1.6.2
+--- Makefile	2018-10-08 08:21:49.987871964 -0400
++++ Makefile_new	2018-10-08 08:22:51.598758453 -0400
+@@ -10,7 +10,7 @@
+ OPENFST_VERSION ?= 1.6.7
  
  # Default features configured for OpenFST; can be overridden in the make command line.
 -OPENFST_CONFIGURE ?= --enable-static --enable-shared --enable-far --enable-ngram-fsts
